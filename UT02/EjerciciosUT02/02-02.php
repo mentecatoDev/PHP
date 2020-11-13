@@ -5,7 +5,7 @@
   </head>
   <body>
     <?php
-      echo $_POST['x'], " x ", $_POST['y'], " = ", $_POST['x'] * $_POST['y'];
+      echo $_POST['euros'], " euros son ", round($_POST['euros'] * 166.386), " pesetas.";
     ?>
-    </body>
+  </body>
 </html>
