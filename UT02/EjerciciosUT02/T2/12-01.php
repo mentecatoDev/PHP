@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>T2-12-01.php</title>
+    <title>T2-12-01</title>
   </head>
   <body>
         <h2>Cuestionario</h2>
 
-        <form action="T2-12-02.php" method="post">
+        <form action="12-02.php" method="post">
           <ol>
             <li>
               ¿Cuál de los siguientes tipos de datos de Java tiene más precisión?<br>

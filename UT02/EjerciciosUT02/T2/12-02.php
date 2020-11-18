@@ -10,6 +10,6 @@
           echo "Ha obtenido $puntos puntos.";
         ?>
         <br><br>
-        <a href="T2-12-01.php">>> Volver</a>
+        <a href="12-01.php">>> Volver</a>
   </body>
 </html>

@@ -11,8 +11,7 @@
 
           $segundosTranscurridos = ($hora * 3600) + ($minuto * 60);
           $segundosHastaMedianoche = (24 * 3600) - $segundosTranscurridos;
-
-          echo "Desde las $hora:$minuto hasta la medianoche faltan ";
+          echo "Desde las " . date('h:i', mktime($hora, $minuto)) ." hasta la medianoche faltan ";
           echo "$segundosHastaMedianoche segundos.";
         ?>
         <br><br>
