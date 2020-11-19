@@ -11,7 +11,7 @@
 
             echo "Tabla del $n<br><br>";
             for ($i = 0; $i < 11; $i++) {
-              echo "<tr><td>$n x $i = ".$n*$i."</tr></td>";
+              echo "<tr><td>$n x $i = ".$n*$i."</td></tr>";
             }
           ?>
         </table>

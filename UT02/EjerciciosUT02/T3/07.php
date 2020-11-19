@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>07.php</title>
+    <title>07</title>
   </head>
   <body>
         <?php
@@ -10,6 +10,7 @@
             $numeroIntroducido = 55555;
             $oportunidades = 3;
           } else {
+            print_r($_POST);
             $oportunidades = $_POST['oportunidades'];
             $numeroIntroducido = $_POST['numeroIntroducido'];
           }
@@ -18,8 +19,8 @@
 
           if ($numeroIntroducido == $numeroSecreto) {
             echo "La caja fuerte se ha abierto.";
-            echo '<img src="https://media.sticker.market/gif/safe-58d1ef7b6abb8028a35740f6-g.gif" alt="">';
-          } else if ($oportunidades == 0) {
+            echo '<img src="https://m.gifmania.com/Gif-Animados-Objetos/Imagenes-Dinero/Cajas-Fuertes/Caja-Fuerte-Lingotes-Oro-81890.gif"  alt="">';
+          } elseif ($oportunidades == 0) {
             echo "Lo siento, has agotado todas tus oportunidades. La caja fuerte permanecerá cerrada.";
           } else {
             echo "Te quedan ", $oportunidades, " oportunidades para abrir la caja fuerte.<br>";

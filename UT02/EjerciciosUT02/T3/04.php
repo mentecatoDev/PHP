@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>04.php</title>
+    <title>04</title>
   </head>
   <body>
         <?php
