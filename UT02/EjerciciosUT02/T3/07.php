@@ -10,7 +10,6 @@
             $numeroIntroducido = 55555;
             $oportunidades = 3;
           } else {
-            print_r($_POST);
             $oportunidades = $_POST['oportunidades'];
             $numeroIntroducido = $_POST['numeroIntroducido'];
           }

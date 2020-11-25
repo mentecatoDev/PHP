@@ -2,45 +2,51 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>23.php</title>
+    <title>24.php</title>
   </head>
   <body>
         <?php
-          // Inicializa variables
-          if (!isset($_POST['n'])) {
-            $n = 0;
-            $suma = 0;
-            $numeroDeElementos = -1;
-          } else {
-            $n = $_POST['n'];
-            $suma = $_POST['suma'];
-            $numeroDeElementos = $_POST['numeroDeElementos'];
-          }
-
-          if ($suma < 10000) {
-            $suma += $n;
-            $numeroDeElementos++;
-          }
-
-          if ((!isset($_POST['n'])) || ($suma < 10000)) {
+          if (!isset($_POST['alturaIntroducida'])){
           ?>
-            Introduzca un número. El programa seguirá pidiendo números mientras la suma de ellos sea inferior a 10000.<br>
-            <form action="23.php" method="post">
-              <input type="number" name="n" autofocus=""><br>
-              <input type="hidden" name="numeroDeElementos" value="<?php echo $numeroDeElementos; ?>">
-              <input type="hidden" name="suma" value="<?php echo $suma; ?>">
+            <h2>Pirámide de números</h2>
+            <form action="24.php" method="post">
+              Altura: <input type="number" name="alturaIntroducida" min="1" max="9" autofocus="" required=""><br>
               <input type="submit" value="Aceptar">
             </form>
           <?php
-          }
+          } else {
+            $alturaIntroducida = $_POST['alturaIntroducida'];
 
-          if ($suma >= 10000) {
-            echo "Ha introducido un total de $numeroDeElementos números.<br>";
-            echo "La suma total es $suma<br>";
-            echo "La media es ".($suma/$numeroDeElementos);
+            $altura = 1;
+            $i = 0;
+            $espacios = $alturaIntroducida-1;
+
+            echo "<code>";
+            while ($altura <= $alturaIntroducida) {
+
+              // inserta espacios
+              for ($i = 1; $i <= $espacios; $i++) {
+                echo "&nbsp";
+              }
+
+              // pinta la línea de números
+              for ($i = 1; $i < $altura; $i++) {
+                echo $i;
+              }
+
+              for ($i = $altura; $i > 0; $i--) {
+                echo $i;
+              }
+
+              echo "<br>";
+
+              $altura++;
+              $espacios--;
+            } // while
+            echo "</code></p>";
           }
-          ?>
-          <br><br>
-          <a href="23.php">>> Volver</a>
-    </body>
+        ?>
+        <br>
+        <a href="24.php">>> Volver</a>
+  </body>
 </html>
