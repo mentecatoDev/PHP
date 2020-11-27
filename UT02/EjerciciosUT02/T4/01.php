@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>T4-01.php</title>
+    <title>T4-01</title>
   </head>
   <body>
     <?php

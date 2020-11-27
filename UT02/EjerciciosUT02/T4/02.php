@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>T4-02.php</title>
+    <title>T4-02</title>
   </head>
   <body>
     <?php
@@ -23,6 +23,9 @@
 
       if ($contadorNumeros == 10) {
         $numeroTexto = $numeroTexto . " " . $n; // añade el último número leído
+        echo '<pre>';
+        echo $numeroTexto;
+        echo '</pre>';
         $numeroTexto = substr($numeroTexto, 2); // quita espacios sobrantes
         $numero = explode(" ", $numeroTexto);
         $maximo = -PHP_INT_MAX;
@@ -57,12 +60,13 @@
       // Pide número y añade el actual a la cadena
       ////////////////////////////////////////////////////////////////
       if ($contadorNumeros < 10)  {
+        echo $numeroTexto;
         ?>
         <form action="02.php" method="get">
           Introduzca un número:
           <input type="number" name ="n" autofocus>
           <input type="hidden" name="contadorNumeros" value="<?= ++$contadorNumeros ?>">
-          <input type="hidden" name="numeroTexto" value="<?= $numeroTexto . " " . $n ?>">
+          <input type="hidden" name="numeroTexto" value="<?= $numeroTexto . ' ' . $n ?>">
           <input type="submit" value="OK">
         </form>
         <?php
