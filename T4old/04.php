@@ -12,7 +12,7 @@
     <form action="04.php" method="get">
       Valor a sustituir: <input type="number" name ="viejo" autofocus="" required=""><br>
       Valor nuevo: <input type="number" name ="nuevo" required="">
-      <input type="hidden" name="numeroTexto" value="<?= $numeroTexto; ?>">
+      <input type="hidden" name="numeroTexto" value="<?php echo $numeroTexto; ?>">
       <input type="submit" value="OK">
     </form>
     <?php

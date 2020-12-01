@@ -6,7 +6,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>Ejercicio 01</title>
+    <title>IES Francisco Romero Vargas</title>
   </head>
   <body>
     <?php

@@ -1,13 +1,13 @@
 <?php
     if (!isset($_GET['n'])) {
-      $contadorNumeros = 0;
-      $numeroTexto = "";
-      $n = "";
-    } else {
-      $n = $_GET['n'];
-      $contadorNumeros = $_GET['contadorNumeros'];
-      $numeroTexto = $_GET['numeroTexto'];
-    }
+    $contadorNumeros = 0;
+    $numeroTexto = "";
+    $n = "";
+  } else {
+    $n = $_GET['n'];
+    $contadorNumeros = $_GET['contadorNumeros'];
+    $numeroTexto = $_GET['numeroTexto'];
+  }
 
   ////////////////////////////////////////////////////////////////
   //  Programa principal una vez recogidos los datos del array.
@@ -79,7 +79,7 @@
       Introduzca un número:
       <input type="number" name ="n" autofocus>
       <input type="hidden" name="contadorNumeros" value="<?= ++$contadorNumeros ?>">
-      <input type="hidden" name="numeroTexto" value="<?= $numeroTexto . ' ' . $n ?>">
+      <input type="hidden" name="numeroTexto" value="<?= $numeroTexto . " " . $n ?>">
       <input type="submit" value="OK">
     </form>
     <?php

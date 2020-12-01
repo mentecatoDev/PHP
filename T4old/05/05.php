@@ -2,8 +2,8 @@
   if (!isset($_GET['temperatura'])) {
     // Pide los datos de las temperaturas
     $mes = array(
-      "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-      "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+      "Enero&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", "Febrero&nbsp;&nbsp;&nbsp;", "Marzo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", "Abril&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", "Mayo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", "Junio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;",
+      "Julio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;", "Agosto&nbsp;&nbsp;&nbsp;&nbsp;", "Septiembre", "Octubre&nbsp;&nbsp;&nbsp;", "Noviembre&nbsp;", "Diciembre&nbsp;");
     ?>
     Por favor, introduzca la temperatura media de cada mes: <br><br>
     <form action="05.php" method="get">
