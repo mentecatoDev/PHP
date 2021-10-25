@@ -12,8 +12,8 @@
     <p>
     Por favor, introduzca dos números cualesquiera: <br>
         <form action="01-02.php" method="post">
-          x: <input type="text" name="x"><br>
-          y: <input type="text" name="y"><br>
+          x: <input type="number" name="x"><br>
+          y: <input type="number" name="y"><br>
           <input type="submit" value="Multiplica">
         </form>
   </body>
